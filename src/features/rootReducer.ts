@@ -1,9 +1,9 @@
 // src/features/rootReducer.ts
 
-import { combineReducers } from '@reduxjs/toolkit';
+import { combineReducers } from '@reduxjs/toolkit'
 
 const rootReducer = combineReducers({
   // Add your slices here
-});
+})
 
-export default rootReducer;
+export default rootReducer
