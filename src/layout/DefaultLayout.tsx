@@ -1,19 +1,23 @@
 import React from 'react'
-// import { AppContent, AppSidebar, AppFooter, AppHeader } from '../components/index'
+import SideBar from '../components/SideBar'
+import AppHeader from '../components/AppHeader'
+import AppContent from '../components/AppContent'
+import AppFooter from '../components/AppFooter'
+import { Box } from '@mui/material'
+// import { AppContent, Sidebar, AppFooter, AppHeader } from '../components'
 
-const DefaultLayout = () => {
+const DefaultLayout: React.FC = () => {
   return (
-    <div>
-        <div>Dashboard</div>
-      {/* <AppSidebar />
-      <div className="wrapper d-flex flex-column min-vh-100 bg-light">
+    <Box display="flex">
+      <SideBar />
+      <Box minHeight="100vh" display="flex" flexDirection="column" flexGrow="1">
         <AppHeader />
-        <div className="body flex-grow-1 px-3">
+        <Box flexGrow="1">
           <AppContent />
-        </div>
+        </Box>
         <AppFooter />
-      </div> */}
-    </div>
+      </Box>
+    </Box>
   )
 }
 
