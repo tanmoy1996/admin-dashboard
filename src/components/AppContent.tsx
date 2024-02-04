@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {ReactNode} from 'react'
 
-const AppContent: React.FC = () => {
+interface Props {
+  children: ReactNode
+}
+
+const AppContent: React.FC<Props> = ({ children }: Props) => {
   return (
-    <div>
-      <h1>AppContent</h1>
-    </div>
+    <>
+      {children}
+    </>
   )
 }
 

@@ -2,9 +2,14 @@ import React from 'react'
 
 const SideBar: React.FC = () => {
   return (
-    <div>
-      <h1>SideBar</h1>
-    </div>
+    <ul>
+      <li>
+      <a href="/">Dashboard</a>
+      </li>
+      <li>
+      <a href="/profile">Profile</a>
+      </li>
+    </ul>
   )
 }
 
